@@ -14,7 +14,7 @@
 			var s = Math.floor((time % (1000 * 60)) / 1000);
 			document.getElementById("timer").innerHTML = `${d}d ${h}h ${m}m ${s}s`;
 			
-			if (distance < 0) {
+			if (time < 0) {
 				clearInterval(x);
 				document.getElementById("timer").innerHTML = "";
 			}
